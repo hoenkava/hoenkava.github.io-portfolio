@@ -1,160 +1,755 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Untitled Document</title>
-    <!-- Bootstrap -->
-	<link href="file:///C|/Users/Assassin/Documents/Portfolio/css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-  </head>
-  <body>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow fixed-top">
-      <img id="l" class="my-0 mr-md-auto font-weight-normal" src="logo2.png" alt="portfolio">
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-5 text-dark" href="#section">Home</a>
-        <a class="p-5 text-dark" href="#about">About</a>
-        <a class="p-5 text-dark" href="#portfolio">Work</a>
-        <a class="p-5 text-dark" href="#contact">Contact</a>
-      </nav>
-      </div>
-      <div id="section">
-      <img id="work" src="work1.jpg" alt="provider">
-      </div>
-      <div id="about">
-  <section class="about">
-    <div class="container vcenter">
-      <div class="row">
-       
-          <div class="content">
-          <h2 class="text-center">About</h2>
-            <blockquote>Life is all about going forward with skills and knowledge.<small>Puneet Raj</small></blockquote>
-            <p>I'm a self-taught web developer and programmer currently living in New Delhi, India. In addition to my web dev skills, I have a very diverse background outside of the tech field. In the past I have been a event manager, artist, photographer and traveller.</p>
-            <p>I bring an eye for visual and user interaction design to every project. I'm always looking to learn new skills and play with new technologies. I'm available for freelance work remotely or on-site in Delhi, Noida or Gurgaon areas.</p>
-          </div>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Mark Webpage Title</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/Hoenkava Tech.png" alt="alternative"></a>   -->
+
+            <!-- <li class="nav-item">
+                <a class="nav-link page-scroll" href="index.html">Puneet Raj<span
+                        class="sr-only">(current)</span></a>
+            </li> -->
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text page-scroll" href="index.html">dev</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#services">Skillset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#projects">Project Details</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="project.html">Project Details</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span> -->
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1 class="h1-large">Hi, I am Puneet, a Mobile Application Developer</h1>
+                        <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
+                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- About-->
+    <div id="about" class="basic-1 bg-gray">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-lg-4"> -->
+            <div class="text-container first">
+                <h2>Hi there Nice to meet you</h2>
+                <p>Hi, I am Puneet, a Flutter Developer with 3+ years of experience specializing in Flutter development.
+                    Seeking to contribute my skills and expertise in creating innovative and high-quality Hybrid
+                    applications. , I have a very diverse background outside of the tech field. In the past I have been
+                    an event manager, artist, photographer, visual designer and traveller during my college days.</p>
+            </div> <!-- end of text-container -->
+        </div> <!-- end of col -->
+        <!-- <div class="col-lg-4">
+                    <div class="text-container second">
+                        <div class="time">2019 - PRESENT</div>
+                        <h6>Freelance Web Developer</h6>
+                        <p>Working happily on my own web projects</p>
+                        <div class="time">2018 - 2019</div>
+                        <h6>Lead Web Developer</h6>
+                        <p>Beautiful project for a major digital agency</p>
+                    </div>  -->
+        <!-- end of text-container -->
+        <!-- </div>  -->
+        <!-- end of col -->
+        <!-- <div class="col-lg-4">
+                    <div class="text-container third">
+                        <div class="time">2017 - 2018</div>
+                        <h6>Senior Web Designer</h6>
+                        <p>Inhouse web designer for ecommerce firm</p>
+                        <div class="time">2016 - 2017</div>
+                        <h6>Junior Web Designer</h6>
+                        <p>Junior web designer for small web agency</p>
+                    </div>  -->
+        <!-- end of text-container -->
+        <!-- </div> -->
+        <!-- end of col -->
+        <!-- </div>  -->
+        <!-- end of row -->
+        <!-- </div> -->
+        <!-- end of container -->
+        <!-- </div>  -->
+
+        <!-- end of basic-1 -->
+        <!-- end of about -->
+
+
+        <!-- Services -->
+        <div id="services" class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-lg-12">
+                    <h2 class="h2-heading">Offered services</h2>
+                    <p class="p-heading">Web design and development have been my bread and butter for more than 5 years. During that time I've discovered that I can help startups and companies with the following services</p>
+                </div>  -->
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="text-box">
+                            <i class="far fa-gem"></i>
+                            <h4>DESIGN</h4>
+                            <p>Successful online projects start with good design. It establishes a solid foundation for
+                                future development and allows for long term growth</p>
+                        </div> <!-- end of text-box -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="text-box">
+                            <i class="fas fa-code"></i>
+                            <h4>DEVELOPMENT</h4>
+                            <p>I can code my own designs or even use the customer's design as base. My focus is to
+                                generate clean code that's well structured for reliability</p>
+                        </div> <!-- end of text-box -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-4">
+                        <div class="text-box">
+                            <i class="fas fa-tv"></i>
+                            <h4>PUBLISH APPS</h4>
+                            <p>I can setup your project with Play Store(Google) and App Store(Apple) and can also
+                                publish your mobile applications for Android and IOS</p>
+                        </div> <!-- end of text-box -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
         </div>
-      </div>
-      </section>
-</div>
+        <!-- end of basic-2 -->
+        <!-- end of services -->
 
- <a id="portfolio"></a>
-  <section class="portfolio">
-    <div class="container">
-      <div class="content">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2 class="text-center">Work</h2>
-          </div>
+        <!-- Projects -->
+        <div id="projects" class="basic-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-delivered">
+                        <h2 class="h2-heading">Delivered Projects</h2>
+                        <!-- <p class="p-heading">Listed below are some of the most representative projects I've worked on.
+                        </p> -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <p><strong> 1 .</strong><strong> Khaana Paani : </strong>
+                                The Khaana Paani App Services Offered
+                                Contactless Table Order
+                                Food Delivery
+                                Take Away
+                                Search Restaurants / Street Vendors
+                                View Digital Menu
+                                User Reviews
+                                Hassle - Free Contactless Table Ordering
+                                Ease of Payment
+                                Live Status Update
+                                Pay via UPI / Debit / Credit Cards
+                                <a class="blue" href="https://khaanapaani.co.in/">details</a>
+                            </p>
+                            <div class="image-container">
+                                <a href="https://khaanapaani.co.in/">
+                                    <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+
+                        </div> <!-- end of text-container -->
+                        <div class="text-container">
+                            <p><strong> 2 .</strong><strong> Khaana Paani Partner: </strong>
+                                An Excellent, Efficient and a Great Way to Grow and Manage Food Outlet.
+
+                                Bring Food Outlet Services Online for to the Users.
+                                
+                                
+                                Accept orders directly from customers instead of third-party aggregators and save heavy commissions on every order with their Own your delivery platform;
+                                
+                                Why use Khaana Paani Partner for food outlets?
+                                
+                                ✔ Manage  Business with Ease and comfort
+                                ✔ Comes with Own Delivery Platform and Deliver Yourself
+                                ✔ Get Rid of Higher Cost of Commission charged by Third Parties ( Free Service / No Hidden Charges )
+                                ✔ Daily Sales Tracking
+                                ✔ All Major UPI & Cards Accepted
+                                ✔ Digital Menu
+                                ✔ Food Outlet can Create Offers by Yourself
+                                ✔ Feedback Platform 
+                                ✔ Application Dashboard
+                                ✔ Contactless QR based Table Ordering
+                                ✔ Queueless Takeaways
+                                ✔ Zero Contact Ordering
+                                ✔ Social Distance Technology
+                                
+                                
+                                Easy and Hassle - Free Registration
+                                
+                                The registration process is very easy, simple and requires minimal effort with an idea to take your business online within seconds.
+                                <a class="blue" href="https://khaanapaani.co.in/">details</a>
+                            </p>
+                            <div class="image-container">
+                                <a href="project.html">
+                                    <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+
+                        </div> <!-- end of text-container -->
+                        <div class="text-container">
+                            <p><strong> 3 .</strong><strong> Spindle : </strong>
+                                Spindle is for businesses and their customers to administer all type of documents (invoices, receipts, bills and other documents) digitally by eliminate the inconvenience of handling paper for printing transactional document and other associated costs. Our ecosystem streamlines communication, reduces paper waste and enhances data privacy. A simple document management application for end customer to organize there invoices, bills, receipts and documents.
+                                <a class="blue" href="https://play.google.com/store/apps/details?id=com.spindle.smartgenx&hl=en_IN&gl=US">details</a>
+                            </p>
+                            <div class="image-container">
+                                <a href="project.html">
+                                    <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+
+                        </div> <!-- end of text-container -->
+                        <div class="text-container">
+                            <p><strong> 4 .</strong><strong> Gourmet Planet : </strong>
+                                The Gourmet Planet App is a unique  Food Lovers' App offering preferential treatment, specially curated offerings & attractive discounts to its members at participating hotels/restaurants as well as along with the food events happening around them.
+                                <a class="blue" href="https://play.google.com/store/apps/details?id=com.gourmetplanet.gpapplication&hl=en_US">details</a>
+                            </p>
+                            <div class="image-container">
+                                <a href="project.html">
+                                    <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
+                                </a>
+                            </div> <!-- end of image-container -->
+
+                        </div>
+                        <!-- end of text-container -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
         </div>
-        <div class="row">
-          <div class="col-sm-3">
-            <a href="http://health.alok760.ml/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Medical</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="http://health.alok760.ml/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Report</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="http://health.alok760.ml/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Hospital</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="http://health.alok760.ml/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Medicine</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="https://thesupplychainnet.com/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Supplychain</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="https://codepen.io/hoenkava/full/NzLBZY/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Tribute Page</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="https://codepen.io/hoenkava/full/jKQRLx/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Travel Form</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-          <div class="col-sm-3">
-            <a href="https://codepen.io/hoenkava/full/rKgNYN/" target="_blank">
-              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
-                <div class="overlay">
-                  <h4>Web landing Page</h4>
-                </div>
-              </div>
-            </a>
-          </div><!-- /.col-sm-3 -->
-        </div>     
-      </div>
-    </div>
-  </section>
-  <div id="contact" class="contact">
-  <div class="header">
-    <h1 class="text-center">Let's work together...</h1>
-    <p id="para" class="text-center" style="color:brown">How do you take your coffee?</p>
-  </div>
-  <a href="https://facebook.com/lightyg" target="_blank" class="contact-details">Facebook</a>
-  <a id="profile-link" href="https://github.com/hoenkava" target="_blank" class="contact-details">GitHub</a>
-  <a href="https://www.linkedin.com/in/puneet-raj-69a008157/" target="_blank" class="contact-details">LinkedIn</a>
-  <a href="mailto:hoenkava@gmail.com" class="contact-details">Send a mail</a>
-  <a href="tel:+919968042056" class="contact-details">Call me</a>
-</div>
-  
+        <!-- end of basic-3 -->
+        <!-- end of projects -->
+
+
+        <!-- Details -->
+        <!-- <div class="split">
+		<div class="area-1">
+		</div> -->
+        <!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
+        <div class="area-2 bg-gray">
+            <!-- <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">      -->
+
+            <!-- Text Container -->
+            <!-- <div class="text-container">
+                            <h2>Why Work With Me</h2>
+                            <p>I am a great communicator and love to invest the necessary time to understand the customer's problem very well</p>
+                            <h5>DESIGN TOOLS</h5>
+                            <p>My favorite design tools are Photoshop and Illustrator but I can create designs in Figma, Sketch and Adobe XD too</p>
+                            <h5>DEVELOPMENT SKILLS</h5>
+                            <p>I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks</p>
+                            
+                            <div class="icons-container">
+                                <img src="images/details-icon-photoshop.png" alt="alternative">
+                                <img src="images/details-icon-illustrator.png" alt="alternative">
+                                <img src="images/details-icon-html.png" alt="alternative">
+                                <img src="images/details-icon-css.png" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" alt="alternative">
+                                <img src="images/details-icon-javascript.png" alt="alternative">
+                            </div> -->
+            <!-- end of icons-container -->
+            <!-- </div> -->
+            <!-- end of text-container -->
+            <!-- end of text container -->
+
+            <!-- </div>  -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- </div>  -->
+            <!-- end of container -->
+            <!-- </div> -->
+            <!-- end of area-2 -->
+            <!-- </div> -->
+            <!-- end of split -->
+            <!-- end of details -->
 
 
 
-    
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="file:///C|/Users/Assassin/Documents/Portfolio/js/jquery-1.11.2.min.js"></script>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="file:///C|/Users/Assassin/Documents/Portfolio/js/bootstrap.js"></script>
-  </body>
+
+            <!-- Works -->
+            <!-- <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-1.jpg" alt="alternative">
+                            </a> -->
+            <!-- </div>  -->
+            <!-- end of image-container -->
+            <!-- <p><strong>For:</strong> Zigoland, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
+                    </div>  -->
+            <!-- end of text-container -->
+            <!-- </div> -->
+            <!-- end of col -->
+            <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-2.jpg" alt="alternative">
+                            </a>
+                        </div>  -->
+            <!-- end of image-container -->
+            <!-- <p><strong>For:</strong> Visodream, <strong>Project:</strong> developed a new forum for the Visodream community <a class="blue" href="project.html">details</a></p>
+                    </div>  -->
+            <!-- end of text-container -->
+            <!-- </div> -->
+            <!-- end of col -->
+            <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-3.jpg" alt="alternative">
+                            </a> -->
+            <!-- </div>  -->
+            <!-- end of image-container -->
+            <!-- <p><strong>For:</strong> Primoday, <strong>Project:</strong> complete redesign of their corporate website and platform <a class="blue" href="project.html">details</a></p>
+                    </div>  -->
+            <!-- end of text-container -->
+            <!-- </div> -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-4.jpg" alt="alternative">
+                            </a>
+                        </div>  -->
+            <!-- end of image-container -->
+            <!-- <p><strong>For:</strong> Nextlite, <strong>Project:</strong> created a custom video editing and upload web app <a class="blue" href="project.html">details</a></p>
+                    </div>  -->
+            <!-- end of text-container -->
+            <!-- </div>  -->
+            <!-- end of col -->
+            <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-5.jpg" alt="alternative">
+                            </a>
+                        </div>  -->
+            <!-- end of image-container -->
+            <!-- <p><strong>For:</strong> Syncnow, <strong>Project:</strong> web design for their corporate websites and landing pages <a class="blue" href="project.html">details</a></p>
+                    </div> -->
+            <!-- end of text-container -->
+            <!-- </div>  -->
+            <!-- end of col -->
+            <!-- <div class="col-lg-4">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="project.html">
+                                <img class="img-fluid" src="images/work-6.jpg" alt="alternative">
+                            </a>
+                        </div>  -->
+            <!-- end of image-container -->
+            <!-- <p><strong>For:</strong> Shifter, <strong>Project:</strong> started a new website from ground up for a new product <a class="blue" href="project.html">details</a></p>
+                    </div>  -->
+            <!-- end of text-container -->
+            <!-- </div>  -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- </div> -->
+            <!-- end of container -->
+            <!-- </div> -->
+            <!-- end of basic-4 -->
+            <!-- end of works -->
+
+
+            <!-- Testimonials -->
+            <!-- <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">A few words from people that chose to work with me</h2>
+                </div>  -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-12"> -->
+
+            <!-- Card -->
+            <!-- <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                            <div class="details">
+                                <img src="images/testimonial-1.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">Samantha Bloom</div>
+                                    <div class="occupation">Team Leader - Syncnow</div>
+                                </div>  -->
+            <!-- end of text -->
+            <!-- </div>  -->
+            <!-- end of testimonial-details -->
+            <!-- </div>
+                    </div> -->
+            <!-- end of card -->
+
+            <!-- Card -->
+            <!-- <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a great eye for design”</p>
+                            <div class="details">
+                                <img src="images/testimonial-2.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">John Rowling</div>
+                                    <div class="occupation">Marketing Manager - Nexlite</div>
+                                </div>  -->
+            <!-- end of text -->
+            <!-- </div>  -->
+            <!-- end of testimonial-details -->
+            <!-- </div>
+                    </div> -->
+            <!-- end of card -->
+
+            <!-- Card -->
+            <!-- <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“So glad we started working with Mark. We've used many times his design and development skills for our inhouse online projects”</p>
+                            <div class="details">
+                                <img src="images/testimonial-3.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">Lana Smith</div>
+                                    <div class="occupation">General Manager - Shifter</div>
+                                </div>  -->
+            <!-- end of text -->
+            <!-- </div>  -->
+            <!-- end of testimonial-details -->
+            <!-- </div>
+                    </div> -->
+            <!-- end of card -->
+
+            <!-- </div> -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- </div> -->
+            <!-- end of container -->
+            <!-- </div> -->
+            <!-- end of cards-1 -->
+            <!-- end of testimonials -->
+
+
+            <!-- Section Divider -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr class="section-divider">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+            <!-- end of section divider -->
+
+
+            <!-- Questions -->
+            <!-- <div class="accordion-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Frequent questions</h2>
+                </div> -->
+            <!-- end of col -->
+            <!-- </div>  -->
+            <!-- end of row -->
+            <!-- <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How can I contact you and quickly get a quote for my online project?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do you create designs from the ground up or you are using themes?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Will I receive any included maintenance or warranty after project delivery?
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    If something goes wrong with the project can I have my money back?
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What's your preferred method of payment and do you need an advance?
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The best way to reach me is through the contact form of by messaging me on my social media accounts. For a fast quote make sure your provide many project details
+                                </div>
+                            </div>
+                        </div>
+                    </div>  -->
+            <!-- end of accordion -->
+
+            <!-- </div>  -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- </div> -->
+            <!-- end of container -->
+            <!-- </div> -->
+            <!-- end of accordion-1 -->
+            <!-- end of questions -->
+
+            <div id="contact" class="form-1 bg-gray">
+                <div class="container">
+                    <h1 class="text-center">Let's work together...</h1>
+                    <p id="para" class="text-center" style="color:grey">How do you take your coffee?</p>
+                </div>
+                <a id="profile-link" href="https://github.com/hoenkava" target="_blank"><img src="github.png"
+                        alt="Github" class="contact-details"></a>
+
+                <a href="https://www.linkedin.com/in/hoenkava/" target="_blank"><img src="ln.png" alt="Github"
+                        class="contact-details"></a>
+                <a href="mailto:hoenkava@gmail.com"><img src="mail.png" alt="Github" class="contact-details"></a>
+                <a href="tel:+919968042056"><img src="call.png" alt="Github" class="contact-details"></a>
+            </div>
+
+
+            <!-- Contact -->
+            <!-- <div id="contact" class="form-1 bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Contact details</h2>
+                            <p class="p-heading">Let's have a coffee together. Mail me at <a class="blue no-line"
+                                    href="#your-link">mailstopuneet@gmail.com</a></p>
+                        </div>  -->
+            <!-- end of col -->
+            <!-- </div>  -->
+            <!-- end of row -->
+            <!-- <div class="row">
+                        <div class="col-lg-12"> -->
+
+            <!-- Contact Form -->
+            <!-- <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control-input" id="cname" required>
+                                    <label class="label-control" for="cname">Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control-input" id="cemail" required>
+                                    <label class="label-control" for="cemail">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                                    <label class="label-control" for="cmessage">Project details</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="form-control-submit-button">Submit</button>
+                                </div>
+                            </form> -->
+            <!-- end of contact form -->
+
+            <!-- </div>  -->
+            <!-- end of col -->
+            <!-- </div> -->
+            <!-- end of row -->
+            <!-- </div>  -->
+            <!-- end of container -->
+            <!-- </div> -->
+            <!-- end of form-1 -->
+            <!-- end of contact -->
+
+
+            <!-- Footer -->
+            <div class="footer bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="social-container">
+                                <!-- <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="#your-link">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                                    </a>
+                                </span> -->
+                                <span class="fa-stack">
+                                    <a href="https://www.instagram.com/hoenkava">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                                <span class="fa-stack">
+                                    <a href="https://www.youtube.com/@entrepreneurmotivation5214">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <!-- end of social-container -->
+                        </div>
+                        <!-- end of col -->
+                    </div>
+                    <!-- end of row -->
+                </div>
+                <!-- end of container -->
+            </div>
+
+            <!-- end of footer -->
+            <!-- end of footer -->
+
+
+
+
+            <!-- Scripts -->
+            <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+            <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+            <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+            <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+
 </html>
